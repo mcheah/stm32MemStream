@@ -323,6 +323,7 @@ void BSP_PB_DeInit(Button_TypeDef Button)
   *   This parameter should be: BUTTON_USER  
   * @retval The Button GPIO pin value.
   */
+uint32_t BSP_PB_GetState(Button_TypeDef Button)
 {
   return HAL_GPIO_ReadPin(BUTTON_PORT[Button], BUTTON_PIN[Button]);
 }
